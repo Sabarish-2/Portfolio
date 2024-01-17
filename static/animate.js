@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
     } catch (error) { }
 });
 
-// setTimeout(function() {
-//     document.querySelectorAll('.delayed-img').forEach(img => {
-//         img.src = img.dataset.src;
-//     });
-// }, 120);
+setTimeout(function() {
+    document.querySelectorAll('.delayed-img').forEach(img => {
+        img.src = img.dataset.src;
+    });
+}, 90);
