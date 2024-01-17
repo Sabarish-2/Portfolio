@@ -30,8 +30,10 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="{{url_for('static', filename='animate.js')}}"></script>
 
-    {% block title %}
-    {% endblock %}
+    <title>    
+        {% block title %}
+        {% endblock %}
+    </title>
 
 </head>
 
@@ -40,7 +42,7 @@
         <!-- NavBar -->
         <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><span class="text-warning">Sabarish</span> Homepage</a>
+                <a class="navbar-brand" href="/index"><span class="text-warning">Sabarish</span> Homepage</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
