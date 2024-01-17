@@ -7,7 +7,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/index')
-def index():
+def home():
     return ('/')
 
 @app.route('/journey')
