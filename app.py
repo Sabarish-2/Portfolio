@@ -17,9 +17,21 @@ def journey():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
+@app.route('/projects#tcw')
+def projectstcw():
+    return render_template('projects.html#tcw')
+@app.route('/projects#bbg')
+def projectsbbg():
+    return render_template('projects.html#bbg')
 @app.route('/projects#dit')
-def projectsd():
+def projectsdit():
     return render_template('projects.html#dit')
+@app.route('/projects#log')
+def projectslog():
+    return render_template('projects.html#log')
+@app.route('/projects#csw')
+def projectscsw():
+    return render_template('projects.html#csw')
 
 @app.route('/contact')
 def contact():
