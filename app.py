@@ -7,8 +7,8 @@ def index():
     return render_template('index.html')
 
 @app.route('/index')
-def index():
-    return ('/')
+def home():
+    return index()
 
 @app.route('/journey')
 def journey():
@@ -17,6 +17,9 @@ def journey():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
+@app.route('/projects#dit')
+def projectsd():
+    return render_template('projects.html#dit')
 
 @app.route('/contact')
 def contact():
