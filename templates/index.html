@@ -1,15 +1,167 @@
-<!-- FILEPATH: /C:/Users/sabar/Web/Portfolio/templates/index.html -->
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="icon" href="path/to/your/icon.png">
-    <title>Form Example</title>
-</head>
-<body>
-    <form action="/greet" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name">
-        <button type="submit">Submit</button>
-    </form>
-</body>
+
+<html lang="en">
+
+  <head>
+
+    <!-- To fit website in mobile -->
+    <meta charset="utf-8" >
+    <meta name="viewport" content="initial-scale=1, width=device-width" >
+
+    <!-- Icons -->
+    <link rel="icon" href="portfolio.png" type="image/x-icon" >
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" >
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet" >
+
+    <!-- Animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="animate.js"></script>
+
+    <title>Sabarish: Homepage</title>
+
+  </head>
+
+  <body>
+    <header>
+      <!-- NavBar -->
+      <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><span class="text-warning">Sabarish</span> Homepage</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/journey">My Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/projects">My Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Well Hello Everybody, 
+          My name is
+          <div><span class="purple">Sabarish</span> Hari Iyer</div>
+          <div>and I am a passionate</div>
+          <span id="element" class="purple"></span>
+        </div>
+        <div class="rightSection">
+          <img src="https://drive.google.com/uc?export=view&id=1-3tJAwgg3KySIVTag8WQBiPjyKSfg6We"
+            alt="Programmer Image" >
+        </div>
+      </section>
+
+      <section class="homecarousel">
+        <h2>Projects that I worked on</h2>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <a href="projects.html#tcw">
+              <div class="carousel-item active">
+                <img src="https://drive.google.com/uc?export=view&id=1-FzZpjp5mvsUJkFeI8Uwy9ATs1Vx4bbE"
+                  class="d-block w-100 d-none d-md-block" alt="Tax Calculator Website Screenshot" >
+                <img src="https://drive.google.com/uc?export=view&id=1-LC4Aoj1RxOE1B2yXGIdUCO1xu4ohtXG"
+                  class="mobile d-block w-100" alt="Tax Calculator Website Screenshot" >
+              </div>
+            </a>
+            <a href="projects.html#bbg">
+              <div class="carousel-item">
+                <img src="https://drive.google.com/uc?export=view&id=1-Yv8g5SLj_oO8PwL8MJCVE0R3mHD0hoM"
+                  class="d-block w-100  mobile" alt="Blue Ball Game Screenshot" >
+                <img src="https://drive.google.com/uc?export=view&id=1qoJE7ZoeyugkbKvqS6sRCbdzzZcE4yRR"
+                  class="d-block w-100 d-none d-md-block" alt="Blue Ball Game Screenshot" >
+              </div>
+            </a>
+            <a href="projects.html#dit">
+              <div class="carousel-item">
+                <img src="https://drive.google.com/uc?export=view&id=1-Dn6TiKK8lhU32wRbzVLpw9eiEbotkNW"
+                  class="d-block w-100  mobile" alt="Ditricxs Application Screenshot" >
+                <img src="https://drive.google.com/uc?export=view&id=1Rsy-vl27ynTld6-n9YpW-0yN7XkXr4kT"
+                  class="d-block w-100 d-none d-md-block" alt="Ditricxs Application Screenshot" >
+              </div>
+            </a>
+            <a href="projects.html#log">
+              <div class="carousel-item">
+                <img src="https://drive.google.com/uc?export=view&id=1-_sHnmidiBF299q2zzLWEh1Popu4hoti"
+                  class="d-block w-100  mobile" alt="Lunar Odyssey Game Screenshot" >
+                <img src="https://drive.google.com/uc?export=view&id=1-cK45l5vVp7jCoZ4ed-xuzDZjOZ69zbO"
+                  class="d-block w-100 d-none d-md-block" alt="Lunar Odyssey Game Screenshot" >
+              </div>
+            </a>
+            <a href="projects.html#csw">
+              <div class="carousel-item">
+                <img src="https://drive.google.com/uc?export=view&id=1-TqjNoy7WA53t0J1hKhr_St3iRCAKetr"
+                  class="d-block w-100  mobile" alt="CS50 Website Screenshot" >
+                <img src="https://drive.google.com/uc?export=view&id=1-Q0DTYWSdBziN772Hgtt8dzAYC4b04Gp"
+                  class="d-block w-100 d-none d-md-block" alt="CS50 Website Screenshot" >
+              </div>
+            </a>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </section>
+
+      <a href="#cs50" class="scroll-button" id="btn50">Click for Magic!</a>
+      <!-- Reference to my Course CS50! -->
+      <div id="cs50" class="cs50">This is a CS50 Project!</div>
+      <p style="color: gray">
+        *reference to CS50 course by Harvard University.
+      </p>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="small text-center text-muted">
+      This is my WebPage.
+    </footer>
+  </body>
+
 </html>
