@@ -4,14 +4,24 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # name = "World!"
-    # if name in request.args:
+    return render_template('index.html')
+@app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/')
+def index():
     return render_template('index.html')
 
-@app.route('/greet', methods=['POST'])
-def greet():
-    name = request.form.get("name", "World")
-    return render_template('greet.html', name=name)
+# @app.route('/greet')
+# def greet():
+    # name = request.form.get("name", "World")
+    # return render_template('greet.html', name=name)
 
 
 
