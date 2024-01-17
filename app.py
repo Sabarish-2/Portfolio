@@ -8,7 +8,7 @@ def index():
 
 @app.route('/index')
 def home():
-    return index
+    return index()
 
 @app.route('/journey')
 def journey():
