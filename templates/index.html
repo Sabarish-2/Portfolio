@@ -1,25 +1,22 @@
 {% extends "layout.html" %}
 
-{% block head %}
-
-  <!-- Animation -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script src="{{url_for('static', filename='animate.js')}}"></script>
-  <title>Sabarish: Homepage</title>
+{% block title %}
+Sabarish: Homepage
 {% endblock %}
 
-{% block body %}
+{% block main %}
 <main>
   <section class="firstSection">
     <div class="leftSection">
       Well Hello Everybody,
+      <br>
       My name is
       <div><span class="purple">Sabarish</span> Hari Iyer</div>
       <div>and I am a passionate</div>
       <span id="element" class="purple"></span>
     </div>
     <div class="rightSection">
-      <img src="https://drive.google.com/uc?export=view&id=1-3tJAwgg3KySIVTag8WQBiPjyKSfg6We" alt="Programmer Image">
+      <img src="{{url_for('static', filename='img/dev.png')}}" alt="Programmer Image">
     </div>
   </section>
 

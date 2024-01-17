@@ -1,146 +1,84 @@
-<!DOCTYPE html>
+{% extends "layout.html"}
 
-<html lang="en">
+{% block title %}
+Journey of Sabarish
+{% endblock %}
 
-    <head>
+{% block main %}
+<main>
 
-        <!-- To fit website in mobile -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, width=device-width">
+    <h3>
+        My Journey
+    </h3>
 
-        <!-- Icons -->
-        <link rel="icon" href="portfolio.png" type="image/x-icon">
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
-
-        <!-- CSS -->
-        <link href="styles.css" rel="stylesheet">
-
-        <!-- JavaScript -->
-        <script src="animate.js"></script>
-
-        <title>Sabarish: Journey</title>
-
-    </head>
-
-    <body>
-        <header>
-            <!-- NavBar -->
-            <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><span class="text-warning">Sabarish</span> Homepage</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="journey.html">My Journey</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="projects.html">My Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="contact.html">Contact Me</a>
-                            </li>
-                        </ul>
-                    </div>
+    <section>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="content">
+                <div class="horizontal-line">
+                    <h5>Secondary School Education</h5>
+                    <p>St. Xavier's High School & Jr. College, Navi Mumbai, Maharashtra, India</p>
                 </div>
-            </nav>
-        </header>
-
-        <main>
-
-            <h3>
-                My Journey
-            </h3>
-
-            <section>
-                <div class="container">
-                    <div class="vertical-line"></div>
-                    <div class="content">
-                        <div class="horizontal-line">
-                            <h5>Secondary School Education</h5>
-                            <p>St. Xavier's High School & Jr. College, Navi Mumbai, Maharashtra, India</p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="content">
+                <div class="horizontal-line">
+                    <h5>Higher Secondary Education</h5>
+                    <p>Tilak Junior College, Navi Mumbai, Maharashtra, India</p>
                 </div>
-                <div class="container">
-                    <div class="vertical-line"></div>
-                    <div class="content">
-                        <div class="horizontal-line">
-                            <h5>Higher Secondary Education</h5>
-                            <p>Tilak Junior College, Navi Mumbai, Maharashtra, India</p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="content">
+                <div class="horizontal-line">
+                    <h5>Graduation - B.Tech CSE</h5>
+                    <p>Hindustan Institute of Technology and Science - HITS, Chennai, Tamil Nadu, India</p>
                 </div>
-                <div class="container">
-                    <div class="vertical-line"></div>
-                    <div class="content">
-                        <div class="horizontal-line">
-                            <h5>Graduation - B.Tech CSE</h5>
-                            <p>Hindustan Institute of Technology and Science - HITS, Chennai, Tamil Nadu, India</p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="content">
+                <div class="horizontal-line">
+                    <h5>Undergraduate Projects</h5>
+                    <ul><u>
+                            <a href="projects.html#tcw">
+                                <li>Tax Calculator Website</li>
+                            </a>
+                            <a href="projects.html#bbg">
+                                <li>Blue Ball Game</li>
+                            </a>
+                            <a href="projects.html#dit">
+                                <li>Dietricxs Mobile Application</li>
+                            </a>
+                            <a href="projects.html#log">
+                                <li>Lunar Odyssey Game</li>
+                            </a>
+                            <a href="projects.html#csw">
+                                <li>CS50 Portfolio Website</li>
+                            </a>
+                        </u>
+                    </ul>
                 </div>
-                <div class="container">
-                    <div class="vertical-line"></div>
-                    <div class="content">
-                        <div class="horizontal-line">
-                            <h5>Undergraduate Projects</h5>
-                            <ul><u>
-                                <a href="projects.html#tcw">
-                                    <li>Tax Calculator Website</li>
-                                </a>
-                                <a href="projects.html#bbg">
-                                    <li>Blue Ball Game</li>
-                                </a>
-                                <a href="projects.html#dit">
-                                    <li>Dietricxs Mobile Application</li>
-                                </a>
-                                <a href="projects.html#log">
-                                    <li>Lunar Odyssey Game</li>
-                                </a>
-                                <a href="projects.html#csw">
-                                    <li>CS50 Portfolio Website</li>
-                                </a>
-                            </u>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="content">
+                <div class="horizontal-line">
+                    <h5 id="blink">Currently!</h5>
+                    <p> I am an undergraduate student in the third year at Hindustan Institute of Technology and
+                        Science, pursuing a B.Tech degree in Computer Science and Engineering (CSE).
+                    </p>
                 </div>
-                <div class="container">
-                    <div class="vertical-line"></div>
-                    <div class="content">
-                        <div class="horizontal-line">
-                            <h5 id="blink">Currently!</h5>
-                            <p> I am an undergraduate student in the third year at Hindustan Institute of Technology and
-                                Science, pursuing a B.Tech degree in Computer Science and Engineering (CSE).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
 
-        </main>
+</main>
 
-        <footer class="small text-center text-muted">
-            This is my WebPage. Last updated on 11/2023.
-        </footer>
-
-    </body>
-
-</html>
+{% endblock %}

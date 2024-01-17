@@ -9,7 +9,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width">
 
     <!-- Icons -->
-    <link rel="icon" href="{{url_for('static', filename='portfolio.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{url_for('static', filename='img/portfolio.png')}}" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,40 +24,46 @@
         crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
 
-    {% block head %}
-    {% endblock %}
+    <!-- Animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="{{url_for('static', filename='animate.js')}}"></script>
+
+    <title>    
+        {% block title %}
+        {% endblock %}
+    </title>
 
 </head>
 
 <body>
-  <header>
-    <!-- NavBar -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><span class="text-warning">Sabarish</span> Homepage</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/journey">My Journey</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/projects">My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index"><span class="text-warning">Sabarish</span> Homepage</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/journey">My Journey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/projects">My Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 
     {% block main %}
