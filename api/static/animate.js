@@ -20,4 +20,4 @@ setTimeout(function() {
     document.querySelectorAll('.delayed-img').forEach(img => {
         img.src = img.dataset.src;
     });
-}, 2);
+}, 20);
