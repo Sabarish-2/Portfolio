@@ -59,7 +59,7 @@
 }
 
 .cs50 {
-    margin: -3.5px 0;
+    margin: -1.5px 0;
     padding: 0;
     box-shadow: none;
     color: lavender;
@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 102svh;
+    height: 100svh;
 }
 
 /* Magic button to scroll down to CS50 */
