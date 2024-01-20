@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 22vh 2vw;
+    padding: 17svh 2vw;
     background-color: #000;
     color: #fff;
     margin: 2vh 2vw;
@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 101vh;
+    height: 102svh;
 }
 
 /* Magic button to scroll down to CS50 */
@@ -158,8 +158,8 @@ button {
     /* Index */
     .firstSection {
         flex-direction: column-reverse;
-        margin: 1vh 2vw;
-        padding: 16vh 10vw;
+        margin: 0.2vh 1.8vw;
+        padding: 8svh 10vw;
     }
 
     .leftSection {
