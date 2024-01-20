@@ -59,7 +59,7 @@
 }
 
 .cs50 {
-    margin: -3.5px 0;
+    margin: -1.5px 0;
     padding: 0;
     box-shadow: none;
     color: lavender;
@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 102svh;
+    height: 100svh;
 }
 
 /* Magic button to scroll down to CS50 */
@@ -158,13 +158,13 @@ button {
     /* Index */
     .firstSection {
         flex-direction: column-reverse;
-        margin: 0.2vh 1.8vw;
-        padding: 8svh 10vw;
+        margin: 0.5svh 3vw;
+        padding: 4svh 10vw;
     }
 
     .leftSection {
         font-size: 1.8rem;
-        margin-top: 15vh;
+        margin-top: 10svh;
     }
 
     .firstSection>div {
