@@ -16,8 +16,28 @@ document.addEventListener("DOMContentLoaded", function() {
     } catch (error) { }
 });
 
-setTimeout(function() {
-    document.querySelectorAll('.delayed-img').forEach(img => {
-        img.src = img.dataset.src;
+// Create a new Intersection Observer instance
+let observer = new IntersectionObserver((entries, observer) => {
+    // Loop over the entries
+    entries.forEach(entry => {
+        // If the element is in the viewport
+        if (entry.isIntersecting) {
+            // Get the image element from the entry
+            let img = entry.target;
+            
+            // Set the src attribute
+            img.src = img.dataset.src;
+
+            // Stop observing the image
+            observer.unobserve(img);
+        }
     });
-}, 20);
+});
+
+// Get all the images
+let imgs = document.querySelectorAll('.delayed-img');
+
+// Start observing each image
+imgs.forEach(img => {
+    observer.observe(img);
+});
