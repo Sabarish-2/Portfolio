@@ -20,16 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
 let observer = new IntersectionObserver((entries, observer) => {
     // Loop over the entries
     entries.forEach(entry => {
-        // If the element is in the viewport
-        if (entry.isIntersecting) {
-            // Get the image element from the entry
-            let img = entry.target;
-            
-            // Set the src attribute
-            img.src = img.dataset.src;
+        // Get the image element from the entry
+        let img = entry.target;
 
-            // Stop observing the image
-            observer.unobserve(img);
+        if (!entry.isIntersecting) {
+        //     // If the element is in the viewport, set the src attribute
+        //     img.src = img.dataset.src;
+        // } else {
+            // If the element is not in the viewport, remove the src attribute
+            img.removeAttribute('src');
         }
     });
 });
@@ -41,3 +40,54 @@ let imgs = document.querySelectorAll('.delayed-img');
 imgs.forEach(img => {
     observer.observe(img);
 });
+
+// // Create a new Intersection Observer instance
+// let observer = new IntersectionObserver((entries, observer) => {
+//     // Loop over the entries
+//     entries.forEach(entry => {
+//         // Get the image element from the entry
+//         let img = entry.target;
+
+//         if (entry.isIntersecting) {
+//             // If the element is in the viewport, set the src attribute
+//             img.src = img.dataset.src;
+//         } else {
+//             // If the element is not in the viewport, remove the src attribute
+//             img.src = "";
+//         }
+//     });
+// });
+
+// // Get all the images
+// let imgs = document.querySelectorAll('.delayed-img');
+
+// // Start observing each image
+// imgs.forEach(img => {
+//     observer.observe(img);
+// });
+
+// // Create a new Intersection Observer instance
+// let observer = new IntersectionObserver((entries, observer) => {
+//     // Loop over the entries
+//     entries.forEach(entry => {
+//         // If the element is in the viewport
+//         if (entry.isIntersecting) {
+//             // Get the image element from the entry
+//             let img = entry.target;
+            
+//             // Set the src attribute
+//             img.src = img.dataset.src;
+
+//             // Stop observing the image
+//             observer.unobserve(img);
+//         }
+//     });
+// });
+
+// // Get all the images
+// let imgs = document.querySelectorAll('.delayed-img');
+
+// // Start observing each image
+// imgs.forEach(img => {
+//     observer.observe(img);
+// });
