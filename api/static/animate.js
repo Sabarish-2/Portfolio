@@ -16,27 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
     } catch (error) { }
 });
 
-// Create a new Intersection Observer instance
-let observer = new IntersectionObserver((entries, observer) => {
-    // Loop over the entries
-    entries.forEach(entry => {
-        // Get the image element from the entry
-        let img = entry.target;
-
-        if (entry.isIntersecting) {
-            // If the element is in the viewport, set the src attribute
-            img.src = img.dataset.src;
-
-            // Stop observing the image
-            observer.unobserve(img);
-        }
+setTimeout(function() {
+    document.querySelectorAll('.delayed-img').forEach(img => {
+        img.src = img.dataset.src;
     });
-});
-
-// Get all the images
-let imgs = document.querySelectorAll('.delayed-img');
-
-// Start observing each image
-imgs.forEach(img => {
-    observer.observe(img);
-});
+}, 20);
