@@ -158,8 +158,8 @@ button {
     /* Index */
     .firstSection {
         flex-direction: column-reverse;
-        margin: 0.2vh 1.8vw;
-        padding: 8svh 10vw;
+        margin: 0.1svh 3vw;
+        padding: 4svh 10vw;
     }
 
     .leftSection {
