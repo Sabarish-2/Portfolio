@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 17svh 2vw;
+    padding: 18svh 2vw;
     background-color: #000;
     color: #fff;
     margin: 2vh 2vw;
@@ -158,8 +158,8 @@ button {
     /* Index */
     .firstSection {
         flex-direction: column-reverse;
-        margin: 0.6svh 3vw;
-        padding: 5svh 10vw;
+        margin: 0.6vh 3vw;
+        padding: 13vh 10vw;
     }
 
     .leftSection {
@@ -230,9 +230,10 @@ footer {
     filter: invert(1);
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    min-height: 95svh;
 }
 
 .projectsec1 img {
@@ -244,9 +245,10 @@ footer {
     background-color: #000;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    min-height: 95svh;
 }
 
 .carouselProjects {
