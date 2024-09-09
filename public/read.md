@@ -1,3 +1,0 @@
-Wow!
-*Hello*
--ajaja-kakak
