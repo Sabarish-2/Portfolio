@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -37,8 +37,9 @@ def projectscsw():
 def contact():
     return render_template('contact.html')
 
-@app.route('/<any_character>')
-def any():
+
+@app.route('/<path:subpath>')
+def catch_all(subpath):
     return index()
 
 # @app.route('/greet')
@@ -49,3 +50,5 @@ def any():
 
 # if __name__ == '__main__':
 #     app.run()
+# if __name__ == '__main__':
+#     app.run(debug=True)
