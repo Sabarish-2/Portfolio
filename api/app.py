@@ -37,6 +37,9 @@ def projectscsw():
 def contact():
     return render_template('contact.html')
 
+@app.route('/<any_character>')
+def any():
+    return index()
 
 # @app.route('/greet')
 # def greet():
