@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -38,6 +38,10 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/<path:subpath>')
+def catch_all(subpath):
+    return index()
+
 # @app.route('/greet')
 # def greet():
     # name = request.form.get("name", "World")
@@ -46,3 +50,5 @@ def contact():
 
 # if __name__ == '__main__':
 #     app.run()
+# if __name__ == '__main__':
+#     app.run(debug=True)
