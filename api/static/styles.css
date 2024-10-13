@@ -301,7 +301,7 @@ footer {
 }
 
 .social a ion-icon,
-#soc {
+#socimg {
     color: blue !important;
     height: 24px !important;
     width: 24px !important;
@@ -311,7 +311,7 @@ footer {
     display: flex !important;
 }
 
-#soc {
+#socimg {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%) !important;
     margin: 10px !important;
 }
