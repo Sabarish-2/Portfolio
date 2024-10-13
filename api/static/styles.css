@@ -324,7 +324,7 @@ a ion-icon {
     display: flex;
 }
 
-a img#icon {
+.icon {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
     margin: 10px;
 }
