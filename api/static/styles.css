@@ -209,14 +209,13 @@ h3 {
 }
 
 a {
-    display: flex;
     text-decoration: none;
     color: black;
 }
 
-/* img {
+img {
     color: #abc;
-} */
+}
 
 /* Footer Design */
 footer {
@@ -303,19 +302,20 @@ footer {
 
 a ion-icon,
 a img {
-    color: blue;
+    color: blue !important;
     height: 24px;
     width: 24px;
 }
-/* 
+
 a {
-    display: flex;
-} */
+    display: flex !important;
+}
 
 a img {
-    filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
+    filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%) !important;
     margin: 10px;
 }
+/* color: #00f; */
 
 a ion-icon {
     padding: 10px;
