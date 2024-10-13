@@ -320,11 +320,11 @@ a ion-icon {
     padding: 10px;
 } */
 
-.sec li a {
+a {
     display: flex;
 }
 
-.icon {
+img {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
     margin: 10px;
 }
