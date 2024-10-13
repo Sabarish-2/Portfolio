@@ -301,7 +301,7 @@ footer {
 }
 
 a ion-icon,
-#icon {
+a img {
     color: blue;
     height: 24px;
     width: 24px;
@@ -324,7 +324,7 @@ a {
     display: flex;
 }
 
-img {
+a img {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
     margin: 10px;
 }
