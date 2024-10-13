@@ -301,21 +301,20 @@ footer {
 }
 
 .social a ion-icon,
-.social a img {
+.social a img#soc {
     color: blue !important;
-    height: 24px;
-    width: 24px;
+    height: 24px !important;
+    width: 24px !important;
 }
 
-.social a {
+.social a.soc {
     display: flex !important;
 }
 
-.social a img {
+.social a img#soc {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%) !important;
-    margin: 10px;
+    margin: 10px !important;
 }
-/* color: #00f; */
 
 .social a ion-icon {
     padding: 10px;
