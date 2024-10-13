@@ -300,23 +300,23 @@ footer {
     list-style: none;
 }
 
-a ion-icon,
-a img {
+.social a ion-icon,
+.social a img {
     color: blue !important;
     height: 24px;
     width: 24px;
 }
 
-a {
+.social a {
     display: flex !important;
 }
 
-a img {
+.social a img {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%) !important;
     margin: 10px;
 }
 /* color: #00f; */
 
-a ion-icon {
+.social a ion-icon {
     padding: 10px;
 }
