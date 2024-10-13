@@ -300,22 +300,22 @@ footer {
     list-style: none;
 }
 
-a ion-icon,
-#icon {
-    color: blue;
-    height: 24px;
-    width: 24px;
+.social a ion-icon,
+#socimg {
+    color: blue !important;
+    height: 24px !important;
+    width: 24px !important;
 }
 
-.social a {
-    display: flex;
+.soc {
+    display: flex !important;
 }
 
-a #icon {
-    filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
-    margin: 10px;
+#socimg {
+    filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%) !important;
+    margin: 10px !important;
 }
 
-a ion-icon {
+.social a ion-icon {
     padding: 10px;
 }
