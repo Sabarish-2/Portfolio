@@ -209,13 +209,14 @@ h3 {
 }
 
 a {
+    display: flex;
     text-decoration: none;
     color: black;
 }
 
-img {
+/* img {
     color: #abc;
-}
+} */
 
 /* Footer Design */
 footer {
@@ -306,23 +307,10 @@ a img {
     height: 24px;
     width: 24px;
 }
-
-/* .social a {
-    display: flex;
-}
-
-a #icon {
-    filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
-    margin: 10px;
-}
-
-a ion-icon {
-    padding: 10px;
-} */
-
+/* 
 a {
     display: flex;
-}
+} */
 
 a img {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
