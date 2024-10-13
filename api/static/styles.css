@@ -307,11 +307,24 @@ a ion-icon,
     width: 24px;
 }
 
-.social a {
+/* .social a {
     display: flex;
 }
 
 a #icon {
+    filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
+    margin: 10px;
+}
+
+a ion-icon {
+    padding: 10px;
+} */
+
+.sec li a {
+    display: flex;
+}
+
+a img#icon {
     filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
     margin: 10px;
 }
