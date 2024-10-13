@@ -300,12 +300,22 @@ footer {
     list-style: none;
 }
 
-a ion-icon {
+a ion-icon,
+#icon {
     color: blue;
-}
-
-ion-icon {
     height: 24px;
     width: 24px;
+}
+
+.social a {
+    display: flex;
+}
+
+a #icon {
+    filter: invert(7%) sepia(97%) saturate(7359%) hue-rotate(248deg) brightness(111%) contrast(144%);
+    margin: 10px;
+}
+
+a ion-icon {
     padding: 10px;
 }

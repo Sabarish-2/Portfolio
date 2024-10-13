@@ -1,99 +1,98 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Contact Sabarish
+Contact Sabarish
 {% endblock %}
 {% block main %}
-        <main class="con">
-            <h3>
-                Contact
-            </h3>
-            <p>
-                You can reach out to me via the following methods:
-            </p>
+<main class="con">
+    <h3>
+        Contact
+    </h3>
+    <p>
+        You can reach out to me via the following methods:
+    </p>
 
-            <ul class="social">
-                <section class="sec">
-                    <div class="left">
-                        <li>
-                            <div>
-                                <a href="tel:+919152303950">
-                                    <ion-icon name="call-outline"></ion-icon>
-                            </div>
-                            <div class="handle">
-                                Phone Number
-                                <br>
-                                +91 915 230 3950
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="mailto:sabarishh03@gmail.com">
-                                <div>
-                                    <ion-icon name="mail-outline"></ion-icon>
-                                </div>
-                                <div class="handle">
-                                    Personal Email ID
-                                    <br>
-                                    sabarishh03@gmail.com
-                            </a>
-                    </div>
-                    </li>
-                    <li style="margin-bottom: 0;">
+    <ul class="social">
+        <section class="sec">
+            <div class="left">
+                <li>
+                    <a href="tel:+919152303950">
                         <div>
-                            <a href="mailto:21113199@student.hindustanuniv.ac.in">
-                                <ion-icon name="mail-sharp"></ion-icon>
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="handle">
+                            Phone Number
+                            <br>
+                            +91 915 230 3950
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:sabarish.iyer3@gmail.com">
+                        <div>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="handle">
+                            Personal Email ID
+                            <br>
+                            sabarish.iyer3@gmail.com
+                        </div>
+                    </a>
+                </li>
+                <li style="margin-bottom: 0;">
+                    <a href="mailto:21113199@student.hindustanuniv.ac.in">
+                        <div>
+                            <ion-icon name="mail-sharp"></ion-icon>
                         </div>
                         <div class="handle">
                             Institutional Email ID
                             <br>
                             21113199@student.hindustanuniv.ac.in
-                            </a>
                         </div>
-                    </li>
-                    </div>
+                    </a>
+                </li>
+            </div>
 
-                    <div class="right">
-                        <li>
-
-                            <div>
-                                <a href="https://www.linkedin.com/in/sabarish-iyer-5ab05922a/">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                            </div>
-                            <div class="handle">
-                                Linkedin
-                                <br>
-                                sabarish-iyer
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="https://leetcode.com/Sabarish_H/">
-                                    <i class="fa-fa-code"></i>
-                            </div>
-                            <div class="handle">
-                                Leetcode
-                                <br>
-                                Sabarish_H
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="https://github.com/Sabarish-2">
-                                    <ion-icon name="logo-github"></ion-icon>
-                            </div>
-                            <div class="handle">
-                                Git
-                                <br>
-                                sabarish-2
-                                </a>
-                            </div>
-                        </li>
-                    </div>
-                </section>
-            </ul>
-        </main>
+            <div class="right">
+                <li>
+                    <a href="https://www.linkedin.com/in/sabarish-iyer-5ab05922a/">
+                        <div>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </div>
+                        <div class="handle">
+                            Linkedin
+                            <br>
+                            sabarish-iyer
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://leetcode.com/Sabarish_H/">
+                        <div>
+                            <img src="{{url_for('static', filename='img/leetcode.png')}}" alt="Leetcode Icon" id="icon">
+                        </div>
+                        <div class="handle">
+                            Leetcode
+                            <br>
+                            Sabarish_H
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sabarish-2">
+                        <div>
+                            <ion-icon name="logo-github"></ion-icon>
+                        </div>
+                        <div class="handle">
+                            Git
+                            <br>
+                            sabarish-2
+                        </div>
+                    </a>
+                </li>
+            </div>
+        </section>
+    </ul>
+</main>
 
 {% endblock %}
