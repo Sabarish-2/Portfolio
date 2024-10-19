@@ -8,7 +8,7 @@ def index():
 
 @app.route('/index')
 def home():
-    return index()
+    return redirect('/')
 
 @app.route('/journey')
 def journey():
@@ -40,7 +40,7 @@ def contact():
 
 @app.route('/<path:subpath>')
 def catch_all(subpath):
-    return index()
+    return redirect('/')
 
 # @app.route('/greet')
 # def greet():
